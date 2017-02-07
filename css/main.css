@@ -116,6 +116,37 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
 }
 
+
+
+.btn-leadership {
+    background-color: #e1362f;
+}
+
+.btn-leadership:focus,
+.btn-leadership:hover {
+    background-color: #e1362f;
+	color: #fff;
+}
+
+.btn-digital {
+    background-color: #6cb670;
+}
+
+.btn-digital:focus,
+.btn-digital:hover {
+    background-color: #6cb670;
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
 .form-control {
 	background-color: #2f383d;
 	border-radius: 0;
