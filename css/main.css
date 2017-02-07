@@ -1641,3 +1641,9 @@ blockquote {
   margin: 0;
 }
 
+//Media Query for Split slider at lower resolution
+@media all and (max-width: 990px){
+   img.wow.fadeInUp.topimg {
+     display: none!important;
+   }
+}
