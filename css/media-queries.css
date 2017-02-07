@@ -64,6 +64,11 @@
 ==============================================================*/
 
 @media (min-width: 768px) and (max-width: 979px) {
+	
+	
+	img.wow.fadeInUp.topimg {
+	    visibility: hidden!important;
+	}
 
 	/* parallax section */
     .parallax-section {
