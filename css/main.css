@@ -131,12 +131,6 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-
-
-
-
-
-
 .form-control {
 	background-color: #2f383d;
 	border-radius: 0;
@@ -430,6 +424,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .feature-desc a {
 	margin-right: 20px;
+	text-align: center;
 }
 
 .btn-leadership {
