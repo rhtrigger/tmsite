@@ -1650,4 +1650,5 @@ blockquote {
 
 .imgContainer{
     float:left;
+    display: inline-block;
 }
