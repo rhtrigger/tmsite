@@ -432,6 +432,26 @@ h1, h2, h3, h4, h5, h6 {
 	margin-right: 20px;
 }
 
+.btn-leadership {
+    background-color: #e1362f;
+}
+
+.btn-leadership:focus,
+.btn-leadership:hover {
+    background-color: #2F383D;
+	color: #fff;
+}
+
+.btn-digital {
+    background-color: #6cb670;
+}
+
+.btn-digital:focus,
+.btn-digital:hover {
+    background-color: #2F383D;
+	color: #fff;
+}
+
 
 /*=================================================================
 	Item counter section
