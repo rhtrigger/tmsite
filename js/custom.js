@@ -6,20 +6,25 @@ jQuery(function ($) { "use strict";
 	/*	Force Hovers to behave
 	/* ========================================================================= */
 
-	$('.social-icons > ul  > li').on("touchstart", function (e) {
-		var link = $(this); //preselect the link
-		if (link.hasClass('hover')) {
-		    return true;
-		    alert('here i am'); 
-		 } 
-		else {
-		   link.addClass('hover');
-		   $('.social-icons > ul  > li').not(this).removeClass('hover');
-		   e.preventDefault();
-		   return false; //extra, and to make sure the function has consistent return points
-		}
-	});	     
+	document.addEventListener('touchstart', function addtouchclass(e){ // first time user touches the screen
+	    document.documentElement.classList.add('can-touch') // add "can-touch" class to document root using classList API
+	    document.removeEventListener('touchstart', addtouchclass, false) // de-register touchstart event
+	}, false);
 		     
+// 	$('.social-icons > ul  > li').on("touchstart", function (e) {
+// 		var link = $(this); //preselect the link
+// 		if (link.hasClass('hover')) {
+// 		    return true;
+// 		    alert('here i am'); 
+// 		 } 
+// 		else {
+// 		   link.addClass('hover');
+// 		   $('.social-icons > ul  > li').not(this).removeClass('hover');
+// 		   e.preventDefault();
+// 		   return false; //extra, and to make sure the function has consistent return points
+// 		}
+// 	});	     
+
 		     
 	/* ========================================================================= */
 	/*	Page Preloader
