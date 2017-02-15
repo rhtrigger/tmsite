@@ -3,6 +3,18 @@
 jQuery(function ($) { "use strict";
 	
 	/* ========================================================================= */
+	/*	Force Hovers to behave
+	/* ========================================================================= */
+
+	var event = ('ontouchstart' in window) ? 'click' : 'mouseenter mouseleave';
+
+	$('.social-icon > ul > li').on(event, function () {
+	    $(this).toggleClass('open');
+	    console.log('toggled'); 
+	});		     
+		     
+		     
+	/* ========================================================================= */
 	/*	Page Preloader
 	/* ========================================================================= */
 	
