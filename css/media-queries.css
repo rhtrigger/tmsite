@@ -524,3 +524,12 @@
         padding: 10px 15px;
     }
 }
+
+
+@media screen and (max-width 768px){
+	.social-icons > ul > li > a {
+	    background-color: #e1e1e1;
+	}
+}
+
+}
