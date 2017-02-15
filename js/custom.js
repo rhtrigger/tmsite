@@ -116,7 +116,7 @@ jQuery(function ($) { "use strict";
 
 	(function() {
 		var count = {
-		  initialized : false,
+		  initialized : true,
 		  initialize : function() {
 			if (this.initialized)
 			  return;
