@@ -6,12 +6,19 @@ jQuery(function ($) { "use strict";
 	/*	Force Hovers to behave
 	/* ========================================================================= */
 
-	var event = ('ontouchstart' in window) ? 'click' : 'mouseenter mouseleave';
-
-	$('.social-icon > ul > li').on(event, function () {
-	    $(this).toggleClass('open');
-	    console.log('toggled'); 
-	});		     
+	$('.social-icons > ul  > li').on("touchstart", function (e) {
+		var link = $(this); //preselect the link
+		if (link.hasClass('hover')) {
+		    return true;
+		    alert('here i am'); 
+		 } 
+		else {
+		   link.addClass('hover');
+		   $('.social-icons > ul  > li').not(this).removeClass('hover');
+		   e.preventDefault();
+		   return false; //extra, and to make sure the function has consistent return points
+		}
+	});	     
 		     
 		     
 	/* ========================================================================= */
